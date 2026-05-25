@@ -1,0 +1,25 @@
+<section id="certifications" class="border-t border-neutral-950">
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-24 grid grid-cols-12 gap-8">
+    <div class="col-span-12 sm:col-span-4">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-neutral-500">
+        <span aria-hidden="true">✦</span> {{ 'certifications.label' | translate }}
+      </p>
+      <p class="font-serif-display text-3xl mt-4 max-w-xs">
+        {{ 'certifications.subtitle' | translate }}
+      </p>
+    </div>
+
+    <div class="col-span-12 sm:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      @for (item of items; track item) {
+        <div class="border border-neutral-200 p-4 hover:border-neutral-950 transition-colors group">
+          <div class="flex items-start gap-3">
+            <span class="font-mono text-[10px] uppercase tracking-widest text-neutral-400 mt-1">✦</span>
+            <p class="font-serif-display text-lg leading-snug group-hover:text-neutral-950">
+              {{ item | translate }}
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

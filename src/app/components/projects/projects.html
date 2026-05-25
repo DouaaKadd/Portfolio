@@ -1,0 +1,83 @@
+<section id="projects" class="border-t border-neutral-950">
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 pt-12">
+    <div class="flex items-baseline justify-between">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-neutral-500">
+        <span aria-hidden="true">✦</span> {{ 'projects.label' | translate }}
+      </p>
+      <p class="font-mono text-[11px] uppercase tracking-widest text-neutral-400 hidden sm:block">
+        {{ 'projects.subtitle' | translate }}
+      </p>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+    @for (project of featured(); track project.id) {
+      <article class="flex flex-col group">
+        <div class="aspect-[4/3] w-full bg-neutral-100 border border-neutral-200 overflow-hidden relative">
+          @if (project.image) {
+            <img [src]="project.image" [alt]="project.titleKey | translate"
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          } @else {
+            <div class="absolute inset-0 flex items-center justify-center">
+              <span class="font-serif-display text-6xl text-neutral-300 group-hover:text-neutral-500 transition-colors">
+                {{ (project.titleKey | translate).charAt(0) }}
+              </span>
+            </div>
+          }
+          <div class="absolute inset-x-0 bottom-0 p-3 flex gap-1.5 flex-wrap">
+            @for (tag of project.tags; track tag) {
+              <span class="bg-white/95 border border-neutral-300 px-1.5 py-0.5 text-[10px] font-mono uppercase">{{ tag }}</span>
+            }
+          </div>
+        </div>
+
+        <h3 class="font-serif-display text-2xl mt-5">{{ project.titleKey | translate }}</h3>
+        <p class="text-sm text-neutral-700 mt-3 leading-relaxed flex-1">{{ project.descriptionKey | translate }}</p>
+
+        <div class="flex items-center gap-4 mt-6">
+          @if (project.repo) {
+            <a [href]="project.repo" target="_blank" rel="noopener" class="link-underline font-mono text-xs uppercase tracking-widest inline-flex items-center gap-2">
+              <span aria-hidden="true">→</span> {{ 'projects.viewCode' | translate }}
+            </a>
+          }
+          @if (project.url) {
+            <a [href]="project.url" target="_blank" rel="noopener" class="link-underline font-mono text-xs uppercase tracking-widest inline-flex items-center gap-2">
+              <span aria-hidden="true">↗</span> {{ 'projects.viewLive' | translate }}
+            </a>
+          }
+        </div>
+      </article>
+    }
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-neutral-200">
+    @for (project of others(); track project.id) {
+      <article class="flex flex-col group">
+        <div class="aspect-[4/3] w-full bg-neutral-100 border border-neutral-200 overflow-hidden relative">
+          @if (project.image) {
+            <img [src]="project.image" [alt]="project.titleKey | translate"
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          } @else {
+            <div class="absolute inset-0 flex items-center justify-center px-4">
+              <span class="font-serif-display text-2xl text-neutral-400 group-hover:text-neutral-700 transition-colors text-center">
+                {{ project.titleKey | translate }}
+              </span>
+            </div>
+          }
+        </div>
+        <h4 class="font-serif-display text-lg mt-4">{{ project.titleKey | translate }}</h4>
+        <p class="text-xs text-neutral-700 mt-2 leading-relaxed">{{ project.descriptionKey | translate }}</p>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          @for (tag of project.tags; track tag) {
+            <span class="border border-neutral-300 px-1.5 py-0.5 text-[9px] font-mono uppercase">{{ tag }}</span>
+          }
+        </div>
+        @if (project.repo) {
+          <a [href]="project.repo" target="_blank" rel="noopener" class="link-underline mt-4 font-mono text-[11px] uppercase tracking-widest inline-flex items-center gap-2">
+            <span aria-hidden="true">→</span> {{ 'projects.viewCode' | translate }}
+          </a>
+        }
+      </article>
+    }
+  </div>
+</section>

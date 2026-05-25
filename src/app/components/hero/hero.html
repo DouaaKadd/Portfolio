@@ -1,0 +1,39 @@
+<section id="top" class="relative border-b border-neutral-950">
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 py-14 lg:py-24 grid grid-cols-12 gap-8 items-center">
+    <div class="col-span-12 sm:col-span-3 flex justify-start">
+      <div class="relative h-32 w-32 sm:h-44 sm:w-44 rounded-full border border-neutral-950 overflow-hidden bg-neutral-100">
+        <img src="douaa.png" alt="Douaa Kaddar" class="absolute inset-0 h-full w-full object-cover" />
+      </div>
+    </div>
+
+    <div class="col-span-12 sm:col-span-9 space-y-6">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-neutral-500">
+        <span aria-hidden="true">✦</span> {{ 'hero.greeting' | translate }}
+      </p>
+      <h1 class="font-serif-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05]">
+        {{ 'hero.name' | translate }}<span class="caret">&nbsp;</span>
+      </h1>
+      <p class="font-serif-display text-2xl sm:text-3xl text-neutral-700 leading-snug max-w-3xl">
+        {{ 'hero.role' | translate }}
+      </p>
+      <p class="text-base text-neutral-700 max-w-2xl leading-relaxed">
+        {{ 'hero.description' | translate }}
+      </p>
+
+      <div class="flex flex-wrap gap-3 pt-4">
+        <a href="#projects"
+          class="inline-flex items-center gap-2 px-5 py-3 bg-neutral-950 text-white text-xs uppercase tracking-widest font-mono hover:bg-neutral-700 transition-colors">
+          <span aria-hidden="true">→</span> {{ 'hero.cta.projects' | translate }}
+        </a>
+        <a href="cv-douaa-kaddar.pdf" download
+          class="inline-flex items-center gap-2 px-5 py-3 border border-neutral-950 text-xs uppercase tracking-widest font-mono hover:bg-neutral-950 hover:text-white transition-colors">
+          <span aria-hidden="true">↓</span> {{ 'hero.cta.cv' | translate }}
+        </a>
+        <a href="#contact"
+          class="inline-flex items-center gap-2 px-5 py-3 text-xs uppercase tracking-widest font-mono link-underline">
+          {{ 'hero.cta.contact' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

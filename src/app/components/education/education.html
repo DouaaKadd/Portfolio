@@ -1,0 +1,27 @@
+<section id="education" class="border-t border-neutral-950">
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-24 grid grid-cols-12 gap-8">
+    <div class="col-span-12 sm:col-span-4">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-neutral-500">
+        <span aria-hidden="true">✦</span> {{ 'education.label' | translate }}
+      </p>
+      <p class="font-serif-display text-3xl mt-4 max-w-xs">
+        {{ 'education.subtitle' | translate }}
+      </p>
+    </div>
+
+    <div class="col-span-12 sm:col-span-8 relative">
+      <div class="absolute left-3 top-2 bottom-2 w-px bg-neutral-300" aria-hidden="true"></div>
+
+      <ul class="space-y-10">
+        @for (item of items; track item.id) {
+          <li class="relative pl-10">
+            <span class="absolute left-1.5 top-2 h-3 w-3 rounded-full bg-white border border-neutral-950" aria-hidden="true"></span>
+            <p class="font-mono text-[11px] uppercase tracking-widest text-neutral-500">{{ item.periodKey | translate }}</p>
+            <h3 class="font-serif-display text-2xl mt-1">{{ item.titleKey | translate }}</h3>
+            <p class="text-sm text-neutral-700 mt-1">{{ item.institutionKey | translate }}</p>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</section>

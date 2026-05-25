@@ -1,0 +1,171 @@
+{
+  "lang": {
+    "es": "Castellano",
+    "en": "English",
+    "ca": "Català",
+    "fr": "Français",
+    "switch": "Language"
+  },
+  "header": {
+    "tagline": "Beep boop boop",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Douaa Kaddar",
+    "role": "Junior Full Stack Developer",
+    "description": "Specialized in web development, process automation and application integration. Higher National Diploma in Web Application Development, with experience in Laravel, PHP, JavaScript, Angular, Docker and n8n.",
+    "cta": {
+      "projects": "View projects",
+      "cv": "Download CV",
+      "contact": "Get in touch"
+    }
+  },
+  "about": {
+    "label": "About me",
+    "headline": "Passionate about technology and automation.",
+    "p1": "I'm a developer passionate about technology and automation. During my professional internship I have worked on web application development, building automated WhatsApp assistants and process automation using n8n.",
+    "p2": "I enjoy learning new technologies and building solutions that help optimize work for companies and users.",
+    "facts": {
+      "location": "Location",
+      "locationValue": "Reus, Tarragona",
+      "studies": "Studies",
+      "studiesValue": "HND in Web Application Development",
+      "languages": "Languages",
+      "languagesValue": "ES · CAT · EN · AR",
+      "availability": "Availability",
+      "availabilityValue": "Open to projects"
+    }
+  },
+  "skills": {
+    "label": "Technologies",
+    "subtitle": "Stack and tools I work with.",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Databases",
+      "tools": "Tools"
+    }
+  },
+  "experience": {
+    "label": "Professional experience",
+    "subtitle": "What I've done so far.",
+    "infuse": {
+      "company": "Infuse Creation",
+      "period": "2025 — 2026",
+      "role": "Web Developer Intern",
+      "task1": "Web application development with PHP and JavaScript.",
+      "task2": "Process automation using n8n.",
+      "task3": "Building WhatsApp assistants.",
+      "task4": "Website development with WordPress and Elementor.",
+      "task5": "Collaborative work via GitHub."
+    },
+    "porta": {
+      "company": "PortAventura World",
+      "period": "2023 — 2024",
+      "role": "Waitress",
+      "task1": "Customer service.",
+      "task2": "Time management in high-demand environments.",
+      "task3": "Teamwork."
+    }
+  },
+  "projects": {
+    "label": "Projects",
+    "subtitle": "A selection of what I've built.",
+    "viewCode": "View code",
+    "viewLive": "View demo",
+    "nutriplan": {
+      "title": "NutriPlan",
+      "description": "Full-stack nutrition planning app. Laravel API + Angular 21 with Material Design 3. Integrates Open Food Facts to search real foods, calculates daily macros with charts and generates automatic weekly meal plans."
+    },
+    "academic": {
+      "title": "Academic Management System",
+      "description": "Application to manage students, training cycles and modules with authentication and enrollment."
+    },
+    "greenbite": {
+      "title": "GreenBite",
+      "description": "Laravel application to manage healthy recipes with nutritional information (kcal, protein, carbs, fats), filters by category and difficulty, search and full CRUD. Blade views with Bootstrap 5."
+    },
+    "dungeon": {
+      "title": "Dungeon Quest",
+      "description": "Dungeon exploration game built using inheritance, polymorphism and data structures."
+    },
+    "dragonball": {
+      "title": "DragonBall App",
+      "description": "Client that consumes the DragonBall API and shows characters with filters and detail view."
+    },
+    "fires": {
+      "title": "Fires Catalanes",
+      "description": "Site dedicated to traditional Catalan festivities with gallery and clean navigation."
+    },
+"rutines": {
+      "title": "Rutines",
+      "description": "Workout routine generator with local persistence. JavaScript and DOM manipulation practice."
+    },
+    "portfolio": {
+      "title": "This Portfolio",
+      "description": "Personal portfolio built with Angular 21 and Tailwind CSS, with multilingual support."
+    }
+  },
+  "education": {
+    "label": "Education",
+    "subtitle": "Academic background.",
+    "daw": {
+      "title": "Web Application Development (HND)",
+      "institution": "Institut Baix Camp",
+      "period": "2024 — 2026"
+    },
+    "nutrition": {
+      "title": "BSc in Human Nutrition and Dietetics",
+      "institution": "Universitat Rovira i Virgili",
+      "period": "2023 — 2025"
+    },
+    "bachillerato": {
+      "title": "Science Baccalaureate",
+      "institution": "Institut Roseta Mauri",
+      "period": "2020 — 2022"
+    }
+  },
+  "certifications": {
+    "label": "Certifications",
+    "subtitle": "Courses and complementary training.",
+    "items": {
+      "vertex": "Prompt Design in Vertex AI",
+      "spring": "Introduction to Spring Framework",
+      "responsive": "Responsive Web Design",
+      "python": "Python from scratch",
+      "cloud": "Introduction to Cloud Computing",
+      "react": "React Fundamentals"
+    }
+  },
+  "languages": {
+    "label": "Languages",
+    "subtitle": "Languages I speak.",
+    "spanish": "Spanish",
+    "catalan": "Catalan",
+    "english": "English",
+    "arabic": "Arabic",
+    "native": "Native",
+    "b2": "B2"
+  },
+  "contact": {
+    "label": "Contact",
+    "headline": "Let's talk?",
+    "subheadline": "I'm one email away.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message →"
+    },
+    "sent": "Opening your email client…",
+    "location": "Reus, Tarragona, ES",
+    "downloadCv": "Download CV"
+  },
+  "footer": {
+    "rights": "Designed and built with Angular.",
+    "backToTop": "Back to top ↑"
+  }
+}

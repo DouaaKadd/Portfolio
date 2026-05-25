@@ -1,0 +1,30 @@
+<section id="about" class="border-t border-neutral-950">
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-24 grid grid-cols-12 gap-8">
+    <div class="col-span-12 sm:col-span-4">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-neutral-500">
+        <span aria-hidden="true">✦</span> {{ 'about.label' | translate }}
+      </p>
+    </div>
+
+    <div class="col-span-12 sm:col-span-8 space-y-6">
+      <p class="font-serif-display text-3xl sm:text-4xl leading-tight">
+        {{ 'about.headline' | translate }}
+      </p>
+      <p class="text-base text-neutral-700 max-w-2xl leading-relaxed">
+        {{ 'about.p1' | translate }}
+      </p>
+      <p class="text-base text-neutral-700 max-w-2xl leading-relaxed">
+        {{ 'about.p2' | translate }}
+      </p>
+
+      <dl class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 pt-6 border-t border-neutral-200 max-w-2xl">
+        @for (fact of facts; track fact.labelKey) {
+          <div class="flex items-baseline justify-between gap-4">
+            <dt class="font-mono text-[11px] uppercase tracking-widest text-neutral-500">{{ fact.labelKey | translate }}</dt>
+            <dd class="text-sm text-right">{{ fact.valueKey | translate }}</dd>
+          </div>
+        }
+      </dl>
+    </div>
+  </div>
+</section>

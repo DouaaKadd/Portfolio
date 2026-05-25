@@ -1,0 +1,29 @@
+<section id="skills" class="border-t border-neutral-950">
+  <div class="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-24 grid grid-cols-12 gap-8">
+    <div class="col-span-12 sm:col-span-4">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-neutral-500">
+        <span aria-hidden="true">✦</span> {{ 'skills.label' | translate }}
+      </p>
+      <p class="font-serif-display text-3xl mt-4 max-w-xs">
+        {{ 'skills.subtitle' | translate }}
+      </p>
+    </div>
+
+    <div class="col-span-12 sm:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-12">
+      @for (group of groups; track group.titleKey) {
+        <div>
+          <h3 class="font-mono text-[11px] uppercase tracking-widest text-neutral-500 border-b border-neutral-200 pb-2">
+            {{ group.titleKey | translate }}
+          </h3>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            @for (item of group.items; track item) {
+              <li class="font-mono text-xs uppercase tracking-wider border border-neutral-300 px-2.5 py-1 hover:bg-neutral-950 hover:text-white transition-colors">
+                {{ item }}
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>

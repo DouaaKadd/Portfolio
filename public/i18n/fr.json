@@ -1,0 +1,171 @@
+{
+  "lang": {
+    "es": "Castellano",
+    "en": "English",
+    "ca": "Català",
+    "fr": "Français",
+    "switch": "Langue"
+  },
+  "header": {
+    "tagline": "Beep boop boop",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Douaa Kaddar",
+    "role": "Développeuse Full Stack Junior",
+    "description": "Spécialisée en développement web, automatisation de processus et intégration d'applications. Diplômée en Développement d'Applications Web, avec de l'expérience en Laravel, PHP, JavaScript, Angular, Docker et n8n.",
+    "cta": {
+      "projects": "Voir les projets",
+      "cv": "Télécharger CV",
+      "contact": "Me contacter"
+    }
+  },
+  "about": {
+    "label": "À propos",
+    "headline": "Passionnée par la technologie et l'automatisation.",
+    "p1": "Je suis une développeuse passionnée par la technologie et l'automatisation. Pendant mon stage professionnel, j'ai participé au développement d'applications web, à la création d'assistants automatisés pour WhatsApp et à l'automatisation de processus avec n8n.",
+    "p2": "J'aime apprendre de nouvelles technologies et créer des solutions qui optimisent le travail des entreprises et des utilisateurs.",
+    "facts": {
+      "location": "Localisation",
+      "locationValue": "Reus, Tarragone",
+      "studies": "Études",
+      "studiesValue": "BTS Développement d'Applications Web (Diplômée)",
+      "languages": "Langues",
+      "languagesValue": "ES · CAT · EN · AR",
+      "availability": "Disponibilité",
+      "availabilityValue": "Ouverte aux projets"
+    }
+  },
+  "skills": {
+    "label": "Technologies",
+    "subtitle": "Stack et outils que j'utilise.",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Bases de données",
+      "tools": "Outils"
+    }
+  },
+  "experience": {
+    "label": "Expérience professionnelle",
+    "subtitle": "Ce que j'ai fait jusqu'à présent.",
+    "infuse": {
+      "company": "Infuse Creation",
+      "period": "2025 — 2026",
+      "role": "Développeuse Web stagiaire",
+      "task1": "Développement d'applications web avec PHP et JavaScript.",
+      "task2": "Automatisation de processus avec n8n.",
+      "task3": "Création d'assistants pour WhatsApp.",
+      "task4": "Développement de sites web avec WordPress et Elementor.",
+      "task5": "Travail collaboratif via GitHub."
+    },
+    "porta": {
+      "company": "PortAventura World",
+      "period": "2023 — 2024",
+      "role": "Serveuse",
+      "task1": "Service à la clientèle.",
+      "task2": "Gestion du temps dans des environnements à forte demande.",
+      "task3": "Travail en équipe."
+    }
+  },
+  "projects": {
+    "label": "Projets",
+    "subtitle": "Une sélection de mes réalisations.",
+    "viewCode": "Voir le code",
+    "viewLive": "Voir la démo",
+    "nutriplan": {
+      "title": "NutriPlan",
+      "description": "Application full-stack de planification nutritionnelle. API Laravel + Angular 21 avec Material Design 3. Intègre Open Food Facts pour rechercher de vrais aliments, calcule les macros du jour avec des graphiques et génère des plans hebdomadaires automatiques."
+    },
+    "academic": {
+      "title": "Système de Gestion Académique",
+      "description": "Application pour gérer les étudiants, les cycles de formation et les modules avec authentification et inscriptions."
+    },
+    "greenbite": {
+      "title": "GreenBite",
+      "description": "Application Laravel pour gérer des recettes saines avec informations nutritionnelles (kcal, protéines, glucides, lipides), filtres par catégorie et difficulté, recherche et CRUD complet. Vues Blade avec Bootstrap 5."
+    },
+    "dungeon": {
+      "title": "Dungeon Quest",
+      "description": "Jeu d'exploration de donjons développé avec héritage, polymorphisme et structures de données."
+    },
+    "dragonball": {
+      "title": "DragonBall App",
+      "description": "Client qui consomme l'API DragonBall et affiche des personnages avec filtres et vue détaillée."
+    },
+    "fires": {
+      "title": "Fires Catalanes",
+      "description": "Site dédié aux festivités traditionnelles catalanes avec galerie et navigation claire."
+    },
+"rutines": {
+      "title": "Rutines",
+      "description": "Générateur de routines d'entraînement avec persistance locale. Pratique de JavaScript et manipulation du DOM."
+    },
+    "portfolio": {
+      "title": "Ce Portfolio",
+      "description": "Portfolio personnel construit avec Angular 21 et Tailwind CSS, avec support multilingue."
+    }
+  },
+  "education": {
+    "label": "Formation",
+    "subtitle": "Parcours académique.",
+    "daw": {
+      "title": "BTS Développement d'Applications Web",
+      "institution": "Institut Baix Camp",
+      "period": "2024 — 2026"
+    },
+    "nutrition": {
+      "title": "Licence en Nutrition Humaine et Diététique",
+      "institution": "Universitat Rovira i Virgili",
+      "period": "2023 — 2025"
+    },
+    "bachillerato": {
+      "title": "Baccalauréat Scientifique",
+      "institution": "Institut Roseta Mauri",
+      "period": "2020 — 2022"
+    }
+  },
+  "certifications": {
+    "label": "Certifications",
+    "subtitle": "Cours et formations complémentaires.",
+    "items": {
+      "vertex": "Prompt Design in Vertex AI",
+      "spring": "Introduction à Spring Framework",
+      "responsive": "Responsive Web Design",
+      "python": "Python depuis zéro",
+      "cloud": "Introduction au Cloud Computing",
+      "react": "Fondamentaux de React"
+    }
+  },
+  "languages": {
+    "label": "Langues",
+    "subtitle": "Les langues que je parle.",
+    "spanish": "Espagnol",
+    "catalan": "Catalan",
+    "english": "Anglais",
+    "arabic": "Arabe",
+    "native": "Natif",
+    "b2": "B2"
+  },
+  "contact": {
+    "label": "Contact",
+    "headline": "On parle ?",
+    "subheadline": "Je suis à un email de distance.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer le message →"
+    },
+    "sent": "Ouverture de votre client mail…",
+    "location": "Reus, Tarragone, ES",
+    "downloadCv": "Télécharger CV"
+  },
+  "footer": {
+    "rights": "Conçu et construit avec Angular.",
+    "backToTop": "Retour en haut ↑"
+  }
+}

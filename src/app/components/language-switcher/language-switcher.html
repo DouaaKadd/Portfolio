@@ -1,0 +1,18 @@
+<div class="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest"
+  [attr.aria-label]="'lang.switch' | translate">
+  @for (lang of language.available; track lang.code) {
+    <button
+      type="button"
+      (click)="select(lang.code)"
+      [class.text-neutral-950]="language.current() === lang.code"
+      [class.text-neutral-400]="language.current() !== lang.code"
+      [class.font-semibold]="language.current() === lang.code"
+      class="hover:text-neutral-950 transition-colors"
+      [attr.aria-pressed]="language.current() === lang.code">
+      {{ lang.code }}
+    </button>
+    @if (!$last) {
+      <span class="text-neutral-300" aria-hidden="true">/</span>
+    }
+  }
+</div>

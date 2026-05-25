@@ -1,0 +1,171 @@
+{
+  "lang": {
+    "es": "Castellano",
+    "en": "English",
+    "ca": "Català",
+    "fr": "Français",
+    "switch": "Idioma"
+  },
+  "header": {
+    "tagline": "Beep boop boop",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Douaa Kaddar",
+    "role": "Desarrolladora Full Stack Junior",
+    "description": "Especializada en desarrollo web, automatización de procesos e integración de aplicaciones. Técnica Superior en Desarrollo de Aplicaciones Web, con experiencia en Laravel, PHP, JavaScript, Angular, Docker y n8n.",
+    "cta": {
+      "projects": "Ver proyectos",
+      "cv": "Descargar CV",
+      "contact": "Contactar"
+    }
+  },
+  "about": {
+    "label": "Sobre mí",
+    "headline": "Apasionada por la tecnología y la automatización.",
+    "p1": "Soy una desarrolladora apasionada por la tecnología y la automatización. Durante mis prácticas profesionales he participado en el desarrollo de aplicaciones web, creación de asistentes automatizados para WhatsApp y automatización de procesos mediante n8n.",
+    "p2": "Me gusta aprender nuevas tecnologías y crear soluciones que ayuden a optimizar el trabajo de empresas y usuarios.",
+    "facts": {
+      "location": "Ubicación",
+      "locationValue": "Reus, Tarragona",
+      "studies": "Estudios",
+      "studiesValue": "Técnica Superior en DAW",
+      "languages": "Idiomas",
+      "languagesValue": "ES · CAT · EN · AR",
+      "availability": "Disponibilidad",
+      "availabilityValue": "Abierta a proyectos"
+    }
+  },
+  "skills": {
+    "label": "Tecnologías",
+    "subtitle": "Stack y herramientas con las que trabajo.",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Bases de datos",
+      "tools": "Herramientas"
+    }
+  },
+  "experience": {
+    "label": "Experiencia profesional",
+    "subtitle": "Lo que he hecho hasta ahora.",
+    "infuse": {
+      "company": "Infuse Creation",
+      "period": "2025 — 2026",
+      "role": "Desarrolladora Web en prácticas",
+      "task1": "Desarrollo de aplicaciones web con PHP y JavaScript.",
+      "task2": "Automatización de procesos mediante n8n.",
+      "task3": "Creación de asistentes para WhatsApp.",
+      "task4": "Desarrollo de páginas web con WordPress y Elementor.",
+      "task5": "Trabajo colaborativo mediante GitHub."
+    },
+    "porta": {
+      "company": "PortAventura World",
+      "period": "2023 — 2024",
+      "role": "Camarera",
+      "task1": "Atención al cliente.",
+      "task2": "Gestión del tiempo en entornos de alta demanda.",
+      "task3": "Trabajo en equipo."
+    }
+  },
+  "projects": {
+    "label": "Proyectos",
+    "subtitle": "Una selección de lo que he construido.",
+    "viewCode": "Ver código",
+    "viewLive": "Ver demo",
+    "nutriplan": {
+      "title": "NutriPlan",
+      "description": "App full-stack de planificación nutricional. Laravel API + Angular 21 con Material Design 3. Integra Open Food Facts para buscar alimentos reales, calcula macros del día con gráficos y genera planes semanales automáticos."
+    },
+    "academic": {
+      "title": "Sistema de Gestión Académica",
+      "description": "Aplicación para gestionar estudiantes, ciclos formativos y módulos con autenticación y matrículas."
+    },
+    "greenbite": {
+      "title": "GreenBite",
+      "description": "Aplicación Laravel para gestionar recetas saludables con información nutricional (kcal, proteínas, hidratos, grasas), filtros por categoría y dificultad, búsqueda y CRUD completo. Vistas Blade con Bootstrap 5."
+    },
+    "dungeon": {
+      "title": "Dungeon Quest",
+      "description": "Juego de exploración de mazmorras desarrollado con herencia, polimorfismo y estructuras de datos."
+    },
+    "dragonball": {
+      "title": "DragonBall App",
+      "description": "Cliente que consume la DragonBall API y muestra personajes con filtros y vista de detalle."
+    },
+    "fires": {
+      "title": "Fires Catalanes",
+      "description": "Sitio dedicado a las festividades tradicionales catalanas con galería y navegación clara."
+    },
+"rutines": {
+      "title": "Rutines",
+      "description": "Generador de rutinas de entrenamiento con persistencia local. Práctica de JavaScript y manipulación del DOM."
+    },
+    "portfolio": {
+      "title": "Este Portfolio",
+      "description": "Portfolio personal construido con Angular 21 y Tailwind CSS, con soporte multilingüe."
+    }
+  },
+  "education": {
+    "label": "Formación",
+    "subtitle": "Trayectoria académica.",
+    "daw": {
+      "title": "CFGS Desarrollo de Aplicaciones Web",
+      "institution": "Institut Baix Camp",
+      "period": "2024 — 2026"
+    },
+    "nutrition": {
+      "title": "Grado en Nutrición Humana y Dietética",
+      "institution": "Universitat Rovira i Virgili",
+      "period": "2023 — 2025"
+    },
+    "bachillerato": {
+      "title": "Bachillerato Científico",
+      "institution": "Institut Roseta Mauri",
+      "period": "2020 — 2022"
+    }
+  },
+  "certifications": {
+    "label": "Certificaciones",
+    "subtitle": "Cursos y formación complementaria.",
+    "items": {
+      "vertex": "Prompt Design in Vertex AI",
+      "spring": "Introducción a Spring Framework",
+      "responsive": "Responsive Web Design",
+      "python": "Python desde cero",
+      "cloud": "Introducción a Cloud Computing",
+      "react": "Fundamentos de React"
+    }
+  },
+  "languages": {
+    "label": "Idiomas",
+    "subtitle": "Los idiomas que hablo.",
+    "spanish": "Castellano",
+    "catalan": "Catalán",
+    "english": "Inglés",
+    "arabic": "Árabe",
+    "native": "Nativo",
+    "b2": "B2"
+  },
+  "contact": {
+    "label": "Contacto",
+    "headline": "¿Hablamos?",
+    "subheadline": "Estoy a un mail de distancia.",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "send": "Enviar mensaje →"
+    },
+    "sent": "Abriendo tu cliente de correo…",
+    "location": "Reus, Tarragona, ES",
+    "downloadCv": "Descargar CV"
+  },
+  "footer": {
+    "rights": "Diseñado y construido con Angular.",
+    "backToTop": "Volver arriba ↑"
+  }
+}
