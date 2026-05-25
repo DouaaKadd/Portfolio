@@ -66,5 +66,7 @@ export const PROJECTS: Project[] = [
     descriptionKey: 'projects.portfolio.description',
     tags: ['Angular', 'Tailwind', 'i18n'],
     image: 'projects/PortFolio.png',
+    repo: 'https://github.com/DouaaKadd/Portfolio',
+    url: 'https://portfolio-two-mauve-v5t180rkji.vercel.app/',
   },
 ];
