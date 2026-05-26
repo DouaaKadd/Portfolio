@@ -2,7 +2,7 @@
 
 > Portfolio personal. Desarrollado con Angular 21, Tailwind CSS v4 y soporte multilingüe (ES · EN · CA · FR).
 
-🌐 **Live demo**: [portfolio-two-mauve-v5t180rkji.vercel.app](https://portfolio-two-mauve-v5t180rkji.vercel.app/)
+🌐 **Live demo**: [douaa-kaddar.vercel.app](https://douaa-kaddar.vercel.app/)
 
 ## Stack
 
