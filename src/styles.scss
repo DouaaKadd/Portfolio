@@ -1,11 +1,17 @@
 @use "tailwindcss";
 
+@theme {
+  --color-accent: #5e6f54;
+  --color-accent-soft: #e9ede5;
+}
+
 :root {
   --color-bg: #ffffff;
   --color-ink: #0a0a0a;
   --color-muted: #6b6b6b;
   --color-line: #d9d9d9;
-  --color-accent: #ff3b00;
+  --color-accent: #5e6f54;
+  --color-accent-soft: #e9ede5;
 }
 
 html, body {
@@ -16,6 +22,11 @@ html, body {
   font-feature-settings: "ss01", "cv11";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #ffffff;
 }
 
 .font-serif-display {
@@ -36,6 +47,11 @@ html, body {
 
 .hairline {
   border-top: 1px solid var(--color-ink);
+}
+
+/* Asterisco decorativo de cada etiqueta de sección */
+.mark {
+  color: var(--color-accent);
 }
 
 .link-underline {
@@ -66,7 +82,7 @@ html, body {
 .caret {
   display: inline-block;
   width: 0.55ch;
-  background: currentColor;
+  background: var(--color-accent);
   margin-left: 0.05em;
   animation: blink 1s steps(2, start) infinite;
 }
