@@ -158,6 +158,10 @@
       "name": "Nombre",
       "email": "Email",
       "message": "Mensaje",
+      "messageHint": "mín. 5 caracteres",
+      "nameError": "Indica tu nombre.",
+      "emailError": "Introduce un email válido.",
+      "messageError": "El mensaje debe tener al menos 5 caracteres.",
       "send": "Enviar mensaje →"
     },
     "sending": "Enviando…",

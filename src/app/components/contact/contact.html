@@ -36,21 +36,33 @@
     <form #contactForm="ngForm" (ngSubmit)="send(contactForm)" class="col-span-12 sm:col-span-7 space-y-6">
       <div>
         <label for="name" class="font-mono text-[11px] uppercase tracking-widest text-neutral-400">{{ 'contact.form.name' | translate }}</label>
-        <input id="name" type="text" name="name" [(ngModel)]="form.name" required
+        <input id="name" type="text" name="name" #nameRef="ngModel" [(ngModel)]="form.name" required
           [disabled]="status() === 'sending' || status() === 'success'"
           class="w-full bg-transparent border-b border-neutral-700 focus:border-white outline-none py-2 text-lg disabled:opacity-50" />
+        @if (nameRef.invalid && nameRef.touched) {
+          <p class="text-[11px] text-red-400 mt-1">{{ 'contact.form.nameError' | translate }}</p>
+        }
       </div>
       <div>
         <label for="email" class="font-mono text-[11px] uppercase tracking-widest text-neutral-400">{{ 'contact.form.email' | translate }}</label>
-        <input id="email" type="email" name="email" [(ngModel)]="form.email" required email
+        <input id="email" type="email" name="email" #emailRef="ngModel" [(ngModel)]="form.email" required email
           [disabled]="status() === 'sending' || status() === 'success'"
           class="w-full bg-transparent border-b border-neutral-700 focus:border-white outline-none py-2 text-lg disabled:opacity-50" />
+        @if (emailRef.invalid && emailRef.touched) {
+          <p class="text-[11px] text-red-400 mt-1">{{ 'contact.form.emailError' | translate }}</p>
+        }
       </div>
       <div>
-        <label for="message" class="font-mono text-[11px] uppercase tracking-widest text-neutral-400">{{ 'contact.form.message' | translate }}</label>
-        <textarea id="message" name="message" rows="5" [(ngModel)]="form.message" required minlength="5"
+        <label for="message" class="font-mono text-[11px] uppercase tracking-widest text-neutral-400">
+          {{ 'contact.form.message' | translate }}
+          <span class="text-neutral-500 normal-case tracking-normal ml-1">({{ 'contact.form.messageHint' | translate }})</span>
+        </label>
+        <textarea id="message" name="message" rows="5" #messageRef="ngModel" [(ngModel)]="form.message" required minlength="5"
           [disabled]="status() === 'sending' || status() === 'success'"
           class="w-full bg-transparent border-b border-neutral-700 focus:border-white outline-none py-2 text-base resize-none disabled:opacity-50"></textarea>
+        @if (messageRef.invalid && messageRef.touched) {
+          <p class="text-[11px] text-red-400 mt-1">{{ 'contact.form.messageError' | translate }}</p>
+        }
       </div>
 
       <button type="submit"

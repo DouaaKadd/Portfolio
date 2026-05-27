@@ -158,6 +158,10 @@
       "name": "Nom",
       "email": "Correu",
       "message": "Missatge",
+      "messageHint": "mín. 5 caràcters",
+      "nameError": "Indica el teu nom.",
+      "emailError": "Introdueix un correu vàlid.",
+      "messageError": "El missatge ha de tenir almenys 5 caràcters.",
       "send": "Envia el missatge →"
     },
     "sending": "Enviant…",
