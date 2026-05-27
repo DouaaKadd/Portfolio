@@ -11,6 +11,7 @@ import { Languages } from './components/languages/languages';
 import { Contact } from './components/contact/contact';
 import { Footer } from './components/footer/footer';
 import { Language } from './services/language';
+import { Reveal } from './directives/reveal.directive';
 
 @Component({
   selector: 'app-root',
@@ -26,6 +27,7 @@ import { Language } from './services/language';
     Languages,
     Contact,
     Footer,
+    Reveal,
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss',

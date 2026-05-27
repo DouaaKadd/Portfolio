@@ -12,7 +12,7 @@
 
   <div class="mx-auto max-w-7xl px-6 lg:px-10 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
     @for (project of featured(); track project.id) {
-      <article class="flex flex-col group">
+      <article class="project-card flex flex-col group">
         <div class="aspect-[4/3] w-full bg-neutral-100 border border-neutral-200 overflow-hidden relative">
           @if (project.image) {
             <img [src]="project.image" [alt]="project.titleKey | translate"
