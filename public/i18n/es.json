@@ -160,7 +160,10 @@
       "message": "Mensaje",
       "send": "Enviar mensaje →"
     },
-    "sent": "Abriendo tu cliente de correo…",
+    "sending": "Enviando…",
+    "success": "Mensaje enviado",
+    "successHint": "Gracias. Te respondo lo antes posible.",
+    "errorMsg": "No se pudo enviar. Inténtalo de nuevo o escríbeme al email directamente.",
     "location": "Reus, Tarragona, ES",
     "downloadCv": "Descargar CV"
   },

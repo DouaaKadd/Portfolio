@@ -160,7 +160,10 @@
       "message": "Message",
       "send": "Envoyer le message →"
     },
-    "sent": "Ouverture de votre client mail…",
+    "sending": "Envoi…",
+    "success": "Message envoyé",
+    "successHint": "Merci. Je vous réponds dès que possible.",
+    "errorMsg": "Impossible d'envoyer. Réessaie ou écris-moi directement par email.",
     "location": "Reus, Tarragone, ES",
     "downloadCv": "Télécharger CV"
   },

@@ -33,30 +33,41 @@
       </div>
     </div>
 
-    <form (submit)="send(); $event.preventDefault()" class="col-span-12 sm:col-span-7 space-y-6">
+    <form #contactForm="ngForm" (ngSubmit)="send(contactForm)" class="col-span-12 sm:col-span-7 space-y-6">
       <div>
         <label for="name" class="font-mono text-[11px] uppercase tracking-widest text-neutral-400">{{ 'contact.form.name' | translate }}</label>
         <input id="name" type="text" name="name" [(ngModel)]="form.name" required
-          class="w-full bg-transparent border-b border-neutral-700 focus:border-white outline-none py-2 text-lg" />
+          [disabled]="status() === 'sending' || status() === 'success'"
+          class="w-full bg-transparent border-b border-neutral-700 focus:border-white outline-none py-2 text-lg disabled:opacity-50" />
       </div>
       <div>
         <label for="email" class="font-mono text-[11px] uppercase tracking-widest text-neutral-400">{{ 'contact.form.email' | translate }}</label>
-        <input id="email" type="email" name="email" [(ngModel)]="form.email" required
-          class="w-full bg-transparent border-b border-neutral-700 focus:border-white outline-none py-2 text-lg" />
+        <input id="email" type="email" name="email" [(ngModel)]="form.email" required email
+          [disabled]="status() === 'sending' || status() === 'success'"
+          class="w-full bg-transparent border-b border-neutral-700 focus:border-white outline-none py-2 text-lg disabled:opacity-50" />
       </div>
       <div>
         <label for="message" class="font-mono text-[11px] uppercase tracking-widest text-neutral-400">{{ 'contact.form.message' | translate }}</label>
-        <textarea id="message" name="message" rows="5" [(ngModel)]="form.message" required
-          class="w-full bg-transparent border-b border-neutral-700 focus:border-white outline-none py-2 text-base resize-none"></textarea>
+        <textarea id="message" name="message" rows="5" [(ngModel)]="form.message" required minlength="5"
+          [disabled]="status() === 'sending' || status() === 'success'"
+          class="w-full bg-transparent border-b border-neutral-700 focus:border-white outline-none py-2 text-base resize-none disabled:opacity-50"></textarea>
       </div>
 
       <button type="submit"
-        class="mt-4 px-6 py-3 border border-white font-mono text-xs uppercase tracking-widest hover:bg-white hover:text-neutral-950 transition-colors">
-        {{ 'contact.form.send' | translate }}
+        [disabled]="contactForm.invalid || status() === 'sending' || status() === 'success'"
+        class="mt-4 px-6 py-3 border border-white font-mono text-xs uppercase tracking-widest hover:bg-white hover:text-neutral-950 transition-colors disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-white">
+        @switch (status()) {
+          @case ('sending') { {{ 'contact.sending' | translate }} }
+          @case ('success') { ✓ {{ 'contact.success' | translate }} }
+          @default { {{ 'contact.form.send' | translate }} }
+        }
       </button>
 
-      @if (sent()) {
-        <p class="font-mono text-[11px] uppercase tracking-widest text-neutral-400">{{ 'contact.sent' | translate }}</p>
+      @if (status() === 'success') {
+        <p class="font-mono text-[11px] uppercase tracking-widest text-accent">{{ 'contact.successHint' | translate }}</p>
+      }
+      @if (status() === 'error') {
+        <p class="font-mono text-[11px] uppercase tracking-widest text-red-400">{{ 'contact.errorMsg' | translate }}</p>
       }
     </form>
   </div>

@@ -1,7 +1,9 @@
-import { Component, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import { inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { TranslatePipe } from '@ngx-translate/core';
+
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xjgzpqqa';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +12,7 @@ import { inject } from '@angular/core';
   styleUrl: './contact.scss',
 })
 export class Contact {
-  private readonly translate = inject(TranslateService);
+  private readonly http = inject(HttpClient);
 
   readonly email = 'dkaddar12@gmail.com';
   readonly form = {
@@ -18,12 +20,33 @@ export class Contact {
     email: '',
     message: '',
   };
-  readonly sent = signal(false);
+  readonly status = signal<'idle' | 'sending' | 'success' | 'error'>('idle');
 
-  send(): void {
-    const subject = encodeURIComponent(`Portfolio · ${this.form.name}`);
-    const body = encodeURIComponent(`${this.form.message}\n\n— ${this.form.name} (${this.form.email})`);
-    window.location.href = `mailto:${this.email}?subject=${subject}&body=${body}`;
-    this.sent.set(true);
+  send(formRef: NgForm): void {
+    if (formRef.invalid || this.status() === 'sending') return;
+
+    this.status.set('sending');
+
+    const payload = {
+      name: this.form.name,
+      email: this.form.email,
+      message: this.form.message,
+      _subject: `Portfolio · ${this.form.name}`,
+    };
+
+    this.http
+      .post(FORMSPREE_ENDPOINT, payload, {
+        headers: { Accept: 'application/json' },
+      })
+      .subscribe({
+        next: () => {
+          this.status.set('success');
+          this.form.name = '';
+          this.form.email = '';
+          this.form.message = '';
+          formRef.resetForm();
+        },
+        error: () => this.status.set('error'),
+      });
   }
 }
