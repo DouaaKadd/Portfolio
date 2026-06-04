@@ -37,6 +37,11 @@
       "languagesValue": "ES · CAT · EN · AR",
       "availability": "Availability",
       "availabilityValue": "Open to projects"
+    },
+    "learning": {
+      "label": "Currently learning",
+      "p1": "I'm building Citafy in my spare time — a SaaS appointment manager for independent physiotherapists. I started the project to learn Inertia.js: I'd been doing Laravel + Angular separately with a REST API in between, and I wanted to see if working without that layer would let me ship personal projects faster.",
+      "p2": "I learned by building, not from tutorials — starting with Laravel Breeze and reaching for the docs whenever I hit a wall. In five weeks I have an MVP with multi-tenant auth, a drag-and-drop calendar, scheduled reminders driven by an Observer, and a public portal for patients via signed URL."
     }
   },
   "skills": {
@@ -76,6 +81,10 @@
     "subtitle": "A selection of what I've built.",
     "viewCode": "View code",
     "viewLive": "View demo",
+    "citafy": {
+      "title": "Citafy",
+      "description": "SaaS appointment manager with automatic WhatsApp reminders for independent physiotherapists. Multi-tenant by user, drag-and-drop calendar (FullCalendar), reminders scheduled 24h before via Observer + scheduler, and a signed-UUID public portal where patients can confirm or cancel without logging in."
+    },
     "nutriplan": {
       "title": "NutriPlan",
       "description": "Full-stack nutrition planning app. Laravel API + Angular 21 with Material Design 3. Integrates Open Food Facts to search real foods, calculates daily macros with charts and generates automatic weekly meal plans."

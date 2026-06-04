@@ -2,6 +2,14 @@ import { Project } from '../models/project';
 
 export const PROJECTS: Project[] = [
   {
+    id: 'citafy',
+    titleKey: 'projects.citafy.title',
+    descriptionKey: 'projects.citafy.description',
+    tags: ['Laravel', 'Inertia', 'Vue 3', 'SQLite'],
+    repo: 'https://github.com/DouaaKadd/Citafy',
+    featured: true,
+  },
+  {
     id: 'nutriplan',
     titleKey: 'projects.nutriplan.title',
     descriptionKey: 'projects.nutriplan.description',

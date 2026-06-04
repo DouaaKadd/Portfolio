@@ -17,6 +17,18 @@
         {{ 'about.p2' | translate }}
       </p>
 
+      <div class="pt-6 border-t border-neutral-200 max-w-2xl space-y-4">
+        <p class="font-mono text-[11px] uppercase tracking-widest text-neutral-500">
+          <span aria-hidden="true" class="mark">✦</span> {{ 'about.learning.label' | translate }}
+        </p>
+        <p class="text-base text-neutral-700 leading-relaxed">
+          {{ 'about.learning.p1' | translate }}
+        </p>
+        <p class="text-base text-neutral-700 leading-relaxed">
+          {{ 'about.learning.p2' | translate }}
+        </p>
+      </div>
+
       <dl class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 pt-6 border-t border-neutral-200 max-w-2xl">
         @for (fact of facts; track fact.labelKey) {
           <div class="flex items-baseline justify-between gap-4">

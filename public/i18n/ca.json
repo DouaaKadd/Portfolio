@@ -37,6 +37,11 @@
       "languagesValue": "ES · CAT · EN · AR",
       "availability": "Disponibilitat",
       "availabilityValue": "Oberta a projectes"
+    },
+    "learning": {
+      "label": "Estic aprenent",
+      "p1": "Construeixo Citafy al meu temps lliure, un SaaS de gestió de cites per a fisios independents. Em vaig posar amb el projecte per aprendre Inertia.js: venia de fer Laravel + Angular separats amb una API REST entremig, i volia veure si treballant sense aquesta capa enllestia projectes personals més ràpid.",
+      "p2": "Vaig aprendre construint, no amb cursos: arrencant amb Laravel Breeze i anant a la documentació quan alguna cosa em xocava. En cinc setmanes tinc un MVP amb autenticació multi-tenant, calendari amb drag&drop, recordatoris programats amb un Observer i portal públic per als pacients via signed URL."
     }
   },
   "skills": {
@@ -76,6 +81,10 @@
     "subtitle": "Una selecció del que he construït.",
     "viewCode": "Veure codi",
     "viewLive": "Veure demo",
+    "citafy": {
+      "title": "Citafy",
+      "description": "SaaS de gestió de cites amb recordatoris automàtics per WhatsApp per a fisios independents. Multi-tenant per usuari, calendari amb drag&drop (FullCalendar), recordatoris programats 24h abans via Observer + scheduler, i portal públic de pacient amb UUID signat per confirmar/cancel·lar sense iniciar sessió."
+    },
     "nutriplan": {
       "title": "NutriPlan",
       "description": "Aplicació full-stack de planificació nutricional. API Laravel + Angular 21 amb Material Design 3. Integra Open Food Facts per cercar aliments reals, calcula els macros del dia amb gràfics i genera plans setmanals automàtics."
