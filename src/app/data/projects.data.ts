@@ -7,6 +7,7 @@ export const PROJECTS: Project[] = [
     descriptionKey: 'projects.citafy.description',
     tags: ['Laravel', 'Inertia', 'Vue 3', 'SQLite'],
     repo: 'https://github.com/DouaaKadd/Citafy',
+    image: 'projects/Citafy.png',
     featured: true,
   },
   {
