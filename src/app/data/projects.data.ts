@@ -6,6 +6,7 @@ export const PROJECTS: Project[] = [
     titleKey: 'projects.lunacuentos.title',
     descriptionKey: 'projects.lunacuentos.description',
     tags: ['React Native', 'Expo', 'Laravel', 'RevenueCat'],
+    image: 'projects/LunaCuentos.png',
     featured: true,
   },
   {
