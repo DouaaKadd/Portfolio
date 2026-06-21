@@ -2,6 +2,13 @@ import { Project } from '../models/project';
 
 export const PROJECTS: Project[] = [
   {
+    id: 'lunacuentos',
+    titleKey: 'projects.lunacuentos.title',
+    descriptionKey: 'projects.lunacuentos.description',
+    tags: ['React Native', 'Expo', 'Laravel', 'RevenueCat'],
+    featured: true,
+  },
+  {
     id: 'citafy',
     titleKey: 'projects.citafy.title',
     descriptionKey: 'projects.citafy.description',
@@ -26,7 +33,6 @@ export const PROJECTS: Project[] = [
     tags: ['Laravel', 'PHP', 'MySQL', 'Bootstrap'],
     repo: 'https://github.com/DouaaKadd/PROJECTE-LARAVEL-STUDENTS',
     image: 'projects/academic.png',
-    featured: true,
   },
   {
     id: 'greenbite',
@@ -35,7 +41,6 @@ export const PROJECTS: Project[] = [
     tags: ['Laravel', 'PHP', 'MySQL', 'Bootstrap'],
     repo: 'https://github.com/DouaaKadd/GreenBite',
     image: 'projects/GreenBite.png',
-    featured: true,
   },
   {
     id: 'dungeon',

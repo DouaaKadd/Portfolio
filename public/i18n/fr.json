@@ -85,6 +85,10 @@
       "title": "Citafy",
       "description": "SaaS de gestion de rendez-vous avec rappels automatiques par WhatsApp pour les kinés indépendants. Multi-tenant par utilisateur, calendrier drag&drop (FullCalendar), rappels programmés 24h avant via Observer + scheduler, et portail public patient avec UUID signé pour confirmer ou annuler sans se connecter."
     },
+    "lunacuentos": {
+      "title": "Luna Cuentos",
+      "description": "Application native iOS et Android de contes pour enfants à l'heure du coucher + contes personnalisés par IA. Monorepo avec backend Laravel (API REST + Sanctum) et application mobile React Native via Expo. Abonnements in-app via RevenueCat, compliance COPPA/GDPR/Apple Kids, build configuré pour l'App Store et Google Play."
+    },
     "nutriplan": {
       "title": "NutriPlan",
       "description": "Application full-stack de planification nutritionnelle. API Laravel + Angular 21 avec Material Design 3. Intègre Open Food Facts pour rechercher de vrais aliments, calcule les macros du jour avec des graphiques et génère des plans hebdomadaires automatiques."

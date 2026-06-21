@@ -85,6 +85,10 @@
       "title": "Citafy",
       "description": "SaaS appointment manager with automatic WhatsApp reminders for independent physiotherapists. Multi-tenant by user, drag-and-drop calendar (FullCalendar), reminders scheduled 24h before via Observer + scheduler, and a signed-UUID public portal where patients can confirm or cancel without logging in."
     },
+    "lunacuentos": {
+      "title": "Luna Cuentos",
+      "description": "Native iOS and Android app for bedtime children stories + AI-personalized tales. Monorepo with Laravel backend (REST API + Sanctum) and React Native mobile app via Expo. In-app subscriptions through RevenueCat, COPPA/GDPR/Apple Kids compliance, ready to ship to App Store and Google Play."
+    },
     "nutriplan": {
       "title": "NutriPlan",
       "description": "Full-stack nutrition planning app. Laravel API + Angular 21 with Material Design 3. Integrates Open Food Facts to search real foods, calculates daily macros with charts and generates automatic weekly meal plans."
