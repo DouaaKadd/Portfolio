@@ -81,6 +81,10 @@
     "subtitle": "Una selección de lo que he construido.",
     "viewCode": "Ver código",
     "viewLive": "Ver demo",
+    "minierp": {
+      "title": "MiniERP",
+      "description": "Módulo de gestión de productos tipo ERP construido con ASP.NET Core MVC y C# (.NET 8). CRUD completo con búsqueda, validaciones servidor/cliente mediante Data Annotations e indicador de stock bajo. Persistencia con Entity Framework Core (patrón idéntico para SQL Server), siguiendo el patrón Modelo-Vista-Controlador."
+    },
     "citafy": {
       "title": "Citafy",
       "description": "SaaS de gestión de citas con recordatorios automáticos por WhatsApp para fisios independientes. Multi-tenant por usuario, calendario con drag&drop (FullCalendar), recordatorios programados 24h antes vía Observer + scheduler, y portal público de paciente con UUID firmado para confirmar/cancelar sin login."

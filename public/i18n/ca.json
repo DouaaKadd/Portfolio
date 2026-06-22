@@ -81,6 +81,10 @@
     "subtitle": "Una selecció del que he construït.",
     "viewCode": "Veure codi",
     "viewLive": "Veure demo",
+    "minierp": {
+      "title": "MiniERP",
+      "description": "Mòdul de gestió de productes tipus ERP construït amb ASP.NET Core MVC i C# (.NET 8). CRUD complet amb cerca, validacions servidor/client mitjançant Data Annotations i indicador d'estoc baix. Persistència amb Entity Framework Core (patró idèntic per a SQL Server), seguint el patró Model-Vista-Controlador."
+    },
     "citafy": {
       "title": "Citafy",
       "description": "SaaS de gestió de cites amb recordatoris automàtics per WhatsApp per a fisios independents. Multi-tenant per usuari, calendari amb drag&drop (FullCalendar), recordatoris programats 24h abans via Observer + scheduler, i portal públic de pacient amb UUID signat per confirmar/cancel·lar sense iniciar sessió."

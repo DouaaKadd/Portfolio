@@ -81,6 +81,10 @@
     "subtitle": "A selection of what I've built.",
     "viewCode": "View code",
     "viewLive": "View demo",
+    "minierp": {
+      "title": "MiniERP",
+      "description": "ERP-style product management module built with ASP.NET Core MVC and C# (.NET 8). Full CRUD with search, server/client validation via Data Annotations and a low-stock indicator. Persistence with Entity Framework Core (same pattern for SQL Server), following the Model-View-Controller pattern."
+    },
     "citafy": {
       "title": "Citafy",
       "description": "SaaS appointment manager with automatic WhatsApp reminders for independent physiotherapists. Multi-tenant by user, drag-and-drop calendar (FullCalendar), reminders scheduled 24h before via Observer + scheduler, and a signed-UUID public portal where patients can confirm or cancel without logging in."

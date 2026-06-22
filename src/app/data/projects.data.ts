@@ -2,6 +2,15 @@ import { Project } from '../models/project';
 
 export const PROJECTS: Project[] = [
   {
+    id: 'minierp',
+    titleKey: 'projects.minierp.title',
+    descriptionKey: 'projects.minierp.description',
+    tags: ['C#', 'ASP.NET Core', 'EF Core', 'SQL Server'],
+    repo: 'https://github.com/DouaaKadd/MiniERP',
+    image: 'projects/MiniERP.png',
+    featured: true,
+  },
+  {
     id: 'lunacuentos',
     titleKey: 'projects.lunacuentos.title',
     descriptionKey: 'projects.lunacuentos.description',
